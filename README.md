@@ -31,16 +31,15 @@ The dataset contains information about students, including:
 * TensorFlow (imported, not heavily used)
 
 ---
+🤖 Model / Algorithm Used
 
-##🤖 Model / Algorithm Used
+A Neural Network (Deep Learning model) was implemented using TensorFlow/Keras.
 
-A Neural Network model was implemented using TensorFlow/Keras.
-
-The model was evaluated using test data:
+Model evaluation:
 
 test_mse_score = model.evaluate(test_data, test_targets)
-The performance metric used is Mean Squared Error (MSE), which measures the difference between predicted and actual values.
-This indicates the use of a supervised learning regression model.
+Performance metric:
+Mean Squared Error (MSE)
 
 ## 🔍 Project Workflow
 
@@ -69,6 +68,18 @@ The following analyses and visualizations were performed:
 
 * 📈 Future Career vs Interested Domain (stacked bar chart)
 * 🔥 Future Career vs Projects (heatmap)
+
+5. Model Training
+
+Trained the model on training dataset using:
+
+model.fit(train_data, train_targets)
+6. Model Evaluation
+
+Tested the model on unseen data:
+
+test_mse_score = model.evaluate(test_data, test_targets)
+Evaluated performance using MSE
 
 ---
 
